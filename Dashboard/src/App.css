@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+}
+
+.Dashboard {
+  text-align: left;
+  margin-left: 100px;
+  margin-top: 50px;
+  font-weight:normal;
+  color: #828282;
+}
+
+#time_saved{
+  color: #FFFFFF;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+#tag_line{
+  font-weight:normal;
+  color: #828282;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+h1 {
+  color: white;
+}
+
+#total_balance{
+  color:#a38024;
+}
+
+#daily_balance{
+  margin-top: 30px;
+  color:#ffffffa7;
+}
+
+#coins{
+  color: gold;
+}
+
+#badges{
+  margin-top: 50px;
+  color: white;
+  font-weight:bold;
+}
+
+#badges-button{
+  background-color: #00bfa5;
+  color:white;
+  font-weight:bold;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  min-height: 101px;
+  align-items: center;
+  background: #333333;
+  color: white;
+  font-size: 19px;
+  position: sticky; top: 0
+}
+
+.nav-links {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: left;
+  list-style: none;
+  color: "white";
+}
+
+body {
+  background-color: #2e2e2e;
+}
+
+li{
+  color:white;
+}
+
+.Dashboard{
+  height: 100vh;
+}
+
+.Analytics{
+  height: 100vh;
+}
+
+.Shop{
+  height: 100vh;
+}
+
+.Settings{
+  height: 100vh;
+}
+
+#nav-link {
+  color: #828282;
+}
+
+#nav-link:hover {
+  color: #FFFFFF;
+  border-bottom: 1px solid #00bfa5;
+}
+
+img{
+  margin-right: 6vh;
+}

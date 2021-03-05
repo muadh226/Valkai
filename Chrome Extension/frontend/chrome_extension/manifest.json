@@ -1,0 +1,53 @@
+{
+	"manifest_version": 2,
+	"name": "XXXTention",
+	"description": "Time is money",
+	"version": "1.0",
+	"key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2JEZIMSsAUvjqOLobKcPe89coaXwjiy0dN0Ml5QJP2PFg9OjyQ1xtQEOWP5Xrvmn4s5W5Z+VeU5PJl/TXMBRHVzWYdgEffPTWk+zuOfpYRI4CVQ0fSR/pr4ihAL7MgUeiaYWOC8fb3O8TEggUVXdbSbvA5/aHTPDKq27bBQRGVtj5MBaOgwoU1W9QRVPa9Vz++yfG79/RWr/jMmk9NN7CmQlvYyeEyhP724qqjxOvYoxgdyAPLeAy+YeQhoCZQiP0anT4eIBcFYcHMn5DKDUdn5OtFpw77t/zh4niDTyoF3hWQr02vRwcFyBKTCJYCjGgasP4ZvkmEfj84dNnuyNZwIDAQAB",
+	"permissions": [
+		"storage", "webNavigation", "tabs", "activeTab", "<all_urls>", "http://localhost:3000/", "identity"
+	],
+	"browser_action": {
+		"default_icon": "img/icon.png",
+		"default_popup": "popup.html"
+	},
+	"content_scripts": [
+		{
+			"matches": ["*://*.youtube.com/watch*"],
+			"css":["css/custom.css"],
+			"js":["js/jquery-3.5.1.min.js", "js/video.js"],
+			"run_at":"document_end"
+		},
+		{
+			"matches": ["<all_urls>"],
+			"exclude_matches": ["*://*.youtube.com/*", "*://*.netflix.com/*", "http://localhost:3000/*"],
+			"css":["css/custom.css"],
+			"js":["js/jquery-3.5.1.min.js", "js/start.js"],
+			"run_at":"document_end"
+		},
+		{
+			"matches": ["*://*.youtube.com/*", "*://*.netflix.com/*"],
+			"css":["css/custom.css"],
+			"js":["js/jquery-3.5.1.min.js", "js/browse.js"],
+			"exclude_matches": ["*://*.youtube.com/watch*", "*://*.netflix.com/watch*"],
+			"run_at":"document_end"
+		},
+		{
+			"matches": ["*://*.netflix.com/watch*"],
+			"css":["css/custom.css"],
+			"js":["js/jquery-3.5.1.min.js", "js/video-netflix.js"],
+			"run_at":"document_end"
+		}
+
+	],
+	"background": {
+		"scripts": ["js/jquery-3.5.1.min.js",
+			"js/background.js",
+			"js/jsrsasign-all-min.js"
+		]
+	},
+	"web_accessible_resources": [
+		"js/background.js",
+		"js/start.js"
+	]
+}

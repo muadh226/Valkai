@@ -1,0 +1,76 @@
+@font-face {
+  font-family: CircularStd;
+  src: "Circular Std Font.otf"
+}
+
+/* The Modal (background) */
+
+
+#popup {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  background-color: #2e2e2e;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: auto;
+  padding: 0;
+  width: 253px;
+  height: 247px;
+  text-align: center;
+  border-radius: 16px;
+}
+
+#timer {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+#labels {
+  font-size: 9px;
+  color: #ffffff;
+}
+
+#dash {
+  height: 32px;
+  width: 194px;
+  font-size: 12px;
+  background-color: ##ffffff;
+  color: #000000;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-top-left-radius: 500px;
+  border-bottom-left-radius: 500px;
+  border-top-right-radius: 500px;
+  border-bottom-right-radius: 500px;
+  display: inline-block;
+  /* position: absolute; */
+}
+
+#dash:hover {
+  background-color: #FD5602;
+}
+
+#end-popup-Tention {
+  height: 32px;
+  width: 194px;
+  font-size: 12px;
+  background-color: #00bfa5;
+  color: #ffffff;
+  text-align: center;
+  border: none;
+  outline: none;
+  border-top-left-radius: 500px;
+  border-bottom-left-radius: 500px;
+  border-top-right-radius: 500px;
+  border-bottom-right-radius: 500px;
+  display: inline-block;
+  /* position: absolute; */
+}
+
+#end-popup-Tention:hover {
+  background-color: #800080;
+}
+
+#coins {
+  color: white;
+}
